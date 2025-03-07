@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #16111A;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    flex-grow: 1;
+}
+
+.advicebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2D2039;
+    width: 450px;
+    height: 350px;
+    border-radius: 10%;
+    padding: 30px;
+
+}
+
+#advicenumber {
+    font-family: "Open Sans", serif;
+    color: #A638F6;
+    padding-bottom: 30px;
+}
+
+#advicequote {
+    font-family: "Open Sans", serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: white;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.patterndivider {
+    width: 100%;
+    height: 20px;
+    border: white;
+    padding-bottom: 80px;
+} 
+
+.patterndivider img {
+    width: 100%;
+    height: auto;
+    
+}
+
+button {
+    background-color: #A638F6;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: none;
+    transform: translate(0%, -50%);
+}
+
+button:hover {
+    box-shadow: 0px 0px 15px 0px #A638F6;
+    cursor: pointer;
+}
+
+button:active{
+    transform: translate(0%, -50%) scale(0.97);
+    
+}
+
+@media screen and (max-width: 376px) {
+    .advicebox {
+        width: 295px;
+        height: 200px;
+        padding: 10px;
+    
+    }
+    
+    .advicenumber {
+        font-size: 14px;
+        padding-bottom: 0px;
+    }
+    
+    #advicequote {
+        font-size: 16px;
+        letter-spacing: 1px; 
+        padding-bottom: 10px;
+    }
+    
+    .patterndivider {
+        padding-bottom: 50px;
+    } 
+
+    button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .techoverlogo {
+        transform: translate(0%, -370px) scale(0.8);
+    }
+    
+}
